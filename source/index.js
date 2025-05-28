@@ -36,7 +36,7 @@ var extractLcovStyleBranches = function ( c ) {
         {
             if ( l.$.branch == 'true' )
             {
-                var branchStats = l.$['condition-coverage'].match( /\d+/g );
+                var branchStats = l.$['condition-coverage'].match( /[\d|\.]+/g );
                 var coveredBranches = Number( branchStats[1] );
                 var totalBranches = Number( branchStats[2] );
                 var leftBranches = totalBranches - coveredBranches;
