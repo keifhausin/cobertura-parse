@@ -138,6 +138,7 @@ version="0.1">
                         <line number="110" hits="1" branch="false" />
                         <line number="114" hits="6" branch="false" />
                         <line number="116" hits="0" branch="false" />
+                        <line number="117" hits="6" branch="true" condition-coverage="85.7142857143% (6/7)" />
                     </lines>
                 </class>
                 <class name="bundling.js" filename="controllers\app\bundling.js" line-rate="0.9333"

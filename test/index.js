@@ -15,8 +15,8 @@ describe( "parseFile", function ()
             assert.equal( result.length, 4 );
             assert.equal( result[ 0 ].functions.found, 16 );
             assert.equal( result[ 0 ].functions.hit, 14 );
-            assert.equal( result[ 0 ].lines.found, 45 );
-            assert.equal( result[ 0 ].lines.hit, 40 );
+            assert.equal( result[ 0 ].lines.found, 46 );
+            assert.equal( result[ 0 ].lines.hit, 41 );
             assert.equal( result[ 0 ].functions.details[ 0 ].line, 5 );
             assert.equal( result[ 0 ].functions.details[ 0 ].hit, 6 );
             assert.equal( result[ 0 ].lines.details[ 0 ].line, 2 );
@@ -46,8 +46,8 @@ describe( "parseFile", function ()
         parse.parseFile( path.join( __dirname, "assets", "sample.xml" ), function ( err, result )
         {
             assert.equal( err, null );
-            assert.equal( result[ 0 ].branches.found, 6 );
-            assert.equal( result[ 0 ].branches.hit, 3 );
+            assert.equal( result[ 0 ].branches.found, 13 );
+            assert.equal( result[ 0 ].branches.hit, 9 );
             assert.equal( result[ 0 ].branches.details[ 0 ].taken, 0 );
             assert.equal( result[ 0 ].branches.details[ 1 ].taken, 1 );
             assert.equal( result[ 0 ].branches.details[ 2 ].taken, 0 );
